@@ -14,6 +14,7 @@ public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
         if(root == NULL) return new TreeNode(val);
         TreeNode *cur = root;
+        //comparing value with root 
         while(true){
             if(cur->val <= val){
                 if(cur->right != NULL) cur=cur->right;
